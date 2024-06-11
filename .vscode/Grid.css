@@ -1,0 +1,824 @@
+.container {
+  background-color:white;
+  display: grid;
+  max-width: 100vw;
+  min-width: 100vw;
+  margin: 15px auto;
+  gap: 30px;
+  grid-template-rows: 100px 550px 660px;
+  grid-template-columns: repeat(3, 1fr) 300px;
+  grid-template-areas:
+    "head head head head"
+    "main main main side"
+    "box-1 box-1 box-1 side"
+}
+
+.header {
+  grid-area: head;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:#B30623;
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+  border-radius: 5px;
+}
+
+.logo {
+  background: url(images1/logo.png);
+  width: 120px;
+  height:80px;
+  margin-top: 3%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.choice {
+  display: flex;
+  cursor: pointer;
+}
+
+.val {
+  margin: 10px;
+  font-size: 14px;
+}
+
+.main-content {
+  grid-area: main;
+  display: grid;
+  background: url(images1/Clockwork.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 22%;
+  background-position-x: center;
+  border-radius: 6px;
+}
+
+.headline {
+  font-size: 40px;
+  font-family: oswald;
+  color: white;
+  background-size: contain;
+  margin-top: 17%;
+  margin-left: 8%;
+}
+
+.by {
+  color: #fff;
+  position: relative;
+  left: 8%;
+  bottom: 80%;
+  font-family: inter;
+}
+
+.Ticket {
+  cursor: pointer;
+  display: flex;
+  background-color: #B30623;
+  color:#fff ;
+  padding: 8px 80px;
+  text-decoration:none;
+  border-radius: 10px;
+  transition: background-color 1s ease;
+  position: relative;
+  bottom: 1500%;
+  margin-left: 24%;
+  margin-right: 35%;
+
+}
+
+.small-box  {
+  grid-area: box-1;
+  display: grid;
+  background-color: white;
+  gap: 20px;
+  grid-template-rows: 4px repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+  "TEXT TEXT TEXT"
+  "img1 img2 img3"
+  "img4 img5 img6"
+}
+
+.Text {
+  font-size: 15px;
+  margin-top: 0;
+  font-family: oswald;
+  text-decoration: black;
+}
+
+.img1 {
+  grid-area: img1;
+  background: url(images1/Whsspers.webp);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-color: black; 
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.Text1 {
+  grid-area: img1;
+  font-size: large;
+  font-family: inter;
+  color: white;
+  position: relative;
+  top: 70%;
+  left: 4%;
+
+}
+
+.by1 {
+  color: #fff;
+  font-family: inter;
+  position: relative;
+  left: 70%;
+  top: 57%;
+
+}
+
+.img2 {
+  grid-area: img2;
+  background: url(images1/Guardians.webp);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-color: black;
+  cursor: pointer; 
+  border-radius: 10px;
+}
+
+.Text2 {
+  grid-area: img2;
+  font-size: large;
+  font-family: inter;
+  color: white;
+  position: relative;
+  top: 70%;
+  left: 5%;
+}
+
+.by2 {
+  color: #fff;
+  font-family: inter;
+  position: relative;
+  left: 67%;
+  top: 50%;   
+
+}
+
+.img3 {
+  grid-area: img3;
+  background: url(images1/Hollow.webp);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-color: black;
+  cursor: pointer; 
+  border-radius: 10px;
+}
+
+.Text3 {
+  grid-area: img3;
+  font-size: large;
+  font-family: inter;
+  color: white;
+  position: relative;
+  top: 70%;
+  left: 5%;
+}
+
+.by3 {
+  color: #fff;
+  font-family: inter;
+  position: relative;
+  left: 70%;
+  top: 50%; 
+}
+
+.img4 {
+  grid-area: img4;
+  background: url(images1/Retro.webp);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-color: black;
+  cursor: pointer; 
+  border-radius: 10px;
+}
+
+.Text4 {
+  grid-area: img4;
+  font-size: large;
+  font-family: inter;
+  color: white;
+  position: relative;
+  top: 75%;
+  left: 5%;
+}
+
+.by4 {
+  color: #fff;
+  font-family: inter;
+  position: relative;
+  left: 60%;
+  top: 62%; 
+}
+
+
+.img5 {
+  grid-area: img5;
+  background: url(images1/Agent.webp);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-color: black;
+  cursor: pointer; 
+  border-radius: 10px;
+}
+
+.Text5 {
+  grid-area: img5;
+  font-size: large;
+  font-family: inter;
+  color: white;
+  position: relative;
+  top: 75%;
+  left: 5%;
+
+}
+
+.by5 {
+  color: #fff;
+  font-family: inter;
+  position: relative;
+  left: 70%;
+  top: 62%; 
+}
+
+.img6 {
+  grid-area: img6;
+  background: url(images1/Love.webp);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-color: black;
+  cursor: pointer; 
+  border-radius: 10px;
+}
+
+.Text6 {
+  grid-area: img6;
+  font-size: large;
+  font-family: inter;
+  color: white;
+  position: relative;
+  top: 70%;
+  left: 5%;
+}
+
+.by6 {
+  color: #fff;
+  font-family: inter;
+  position: relative;
+  left: 65%;
+  top: 55%; 
+}
+
+.sidebar {
+  grid-area: side;
+  display: grid;
+  gap: 10px;
+  border-radius: 10px;
+  background-color:#B30623;
+  grid-template-rows: 3px repeat(3, 1fr) 1px repeat(3, 1fr) 70px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas:
+  "pp"
+  "movies1"
+  "movies2"
+  "movies3"
+  "ss"
+  "coming4"
+  "coming5"
+  "coming6"
+}
+
+.Pop {
+  grid-area: pp;
+  font-family: oswald;
+  font-size: medium;
+  color: white;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.movies1 {
+  grid-area:movies1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  margin-top: 14%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px;
+}
+
+.pic1 {
+  grid-area: movies1;
+  background: url(images1/Guardians.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  background-position: center;
+  margin-top: 21%;
+  margin-left: 8%;
+  margin-right: 62%;
+  margin-bottom: 6%;
+  border-radius:5px;
+}
+
+.text7 {
+  grid-area: movies1;
+  font-family: inter;
+  color: black;
+  font-size: x-small;
+  margin-left: 38%;
+  margin-top: 9%;
+}
+
+.rating1 {
+  grid-area: movies1;
+  background: url(images1/images/Rate.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 35%;
+  margin-left: 11%;
+}
+
+.movies2 {
+  grid-area: movies2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color:white;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+  border-radius: 5px;
+}
+
+.pic2 {
+  grid-area: movies2;
+  background: url(images1/Clockwork.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 12%;
+  margin-bottom: 17%;
+  margin-left: 8%;
+  margin-right: 62%;
+  border-radius:5px;
+}
+
+.text8 {
+  grid-area: movies2;
+  font-family: inter;
+  font-size: x-small;
+  color: black;
+  margin-top: 9%;
+  margin-left: 38%;
+
+}
+
+.rating2 {
+  grid-area: movies2;
+  background: url(images1/images/Rate.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 15%;
+  margin-left: 11%;
+}
+
+.movies3 {
+  grid-area: movies3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  margin-top: -4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 17%;
+  border-radius: 5px;
+}
+
+.pic3 {
+  grid-area: movies3;
+  background: url(images1/Hollow.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 3%;
+  margin-left: 8%;
+  margin-right: 62%;
+  margin-bottom: 25%;
+  border-radius:5px;
+}
+
+.text9 {
+  grid-area: movies3;
+  font-family: inter;
+  font-size: x-small;
+  color: black;
+  margin-top: 9%;
+  margin-left: 38%;
+}
+
+.rating3 {
+  grid-area: movies3;
+  background: url(images1/images/Rate1.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 0%;
+  margin-left: 11%;
+}
+
+.Soon {
+  grid-area: ss;
+  font-family: oswald;
+  font-size: medium;
+  color: white;
+  margin-top: -3%;
+  margin-left: 5%;
+}
+
+.coming4 {
+  grid-area: coming4;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  margin-top: 7%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 6%;
+  border-radius: 5px;
+}
+
+.pic4 {
+  grid-area: coming4;
+  background: url(images1/Lost.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 14%;
+  margin-left: 8%;
+  margin-right: 62%;
+  margin-bottom: 13%;
+  border-radius:5px;
+}
+
+.text10 {
+  grid-area: coming4;
+  font-family: inter;
+  font-size: x-small;
+  color: black;
+  margin-top: 9%;
+  margin-left: 38%;
+}
+
+.coming5 {
+  grid-area: coming5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  margin-top: -2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 15%;
+  border-radius: 5px;
+}
+
+.pic5 {
+  grid-area: coming5;
+  background: url(images1/Rehersal.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 5%;
+  margin-left: 8%;
+  margin-right: 62%;
+  margin-bottom: 24%;
+  border-radius:5px;
+}
+
+.text11 {
+  grid-area: coming5;
+  font-family: inter;
+  font-size: x-small;
+  color: black;
+  margin-top: 9%;
+  margin-left: 38%;
+}
+
+.coming6 {
+  grid-area: coming6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  margin-top: -11%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 21%;
+  border-radius: 5px;
+}
+
+.pic6 {
+  grid-area: coming6;
+  background: url(images1/Zombie.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -3%;
+  margin-left: 8%;
+  margin-right: 62%;
+  margin-bottom: 30%;
+  border-radius:5px;
+}
+
+.text12 {
+  grid-area: coming6;
+  font-family: inter;
+  font-size: x-small;
+  color: black;
+  margin-top: 10%;
+  margin-left: 38%;
+}
+
+.contanier{
+background-color:white;
+display: grid;
+min-width: 100vh;
+max-width: 100vw;
+margin: 15px auto;
+gap: 30px;
+grid-template-rows: 100px 280px 600px;
+grid-template-columns: repeat(1, 1fr);
+grid-template-areas:
+  "head"
+  "maind"
+  "box-1s"  
+}
+
+
+.mainds {
+grid-area: maind;
+display: grid;
+background-size: contain;
+background: url(images1/Clockwork.webp);
+background-repeat: no-repeat;
+background-size: 600px;
+background-position-x: left;
+border-radius: 10px;
+}
+
+.headlines {
+grid-area: maind;
+font-size: xx-large;
+font-family: oswald;
+color: black; 
+background-size: contain;
+margin-left: 33%;
+margin-top: 0%;
+}
+
+.byline {
+grid-area: maind;
+font-size: medium;
+font-family: inter;
+color: gray;
+margin-left: 33%;
+margin-top: 2.5%;
+}
+
+.info {
+grid-area: maind;
+font-size: small;
+font-family: inter;
+color: black;
+margin-left: 33%;
+margin-top: 4%;
+}
+
+.lang {
+grid-area: maind;
+display: grid;
+background: url(images1/Group1.png);
+background-repeat: no-repeat;
+background-size: 200px;
+margin-left: 34%;
+margin-top: 8%;
+
+}
+
+.text33{
+grid-area: box-1s;
+font-size: x-large;
+font-family: oswald;
+margin-left: 3%;
+}
+
+.pic22 {
+grid-area: box-1s;
+display: grid;
+background: url(images1/Group2.png);
+background-size: 1100px;
+background-repeat: no-repeat;
+position: relative;
+right: 0.2%;
+margin-left: 23%;
+margin-top: 3%;
+}
+
+.seatcolor {
+grid-area: box-1s;
+background: url(images1/Group3.png);
+background-size: 350px;
+background-repeat: no-repeat;
+position: relative;
+margin-top: 30%;
+margin-left: 42.5%;
+
+}
+
+.Book {
+cursor: pointer;
+display: flex;
+background-color: #B30623;
+color:white ;
+padding: 10px 150px;
+text-decoration:none;
+border-radius: 10px;
+transition: background-color 1s ease;
+position: relative;
+left: 41.4%;
+
+}
+
+.theater {
+  grid-area: box-1s;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  max-width: 110vh;
+  position: relative;
+  left: 24%;
+  top: 33%;
+
+  }
+
+.seats {
+  grid-area: box-1s;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+  gap: 25px;
+}
+
+.row {
+margin-bottom: 20px;
+}
+
+.seat {
+  display: none; 
+  /* hide the actual checkbox, it will be styled by the label */
+  }
+.seat-label {
+display: inline-block;
+width: 35px;
+height: 35px;
+background-color: #ccc;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.seat-label.available:hover,
+.seat:checked + .seat-label.available {
+background-color: #fc0;
+}
+
+.seat-label.reserved,
+.seat:disabled + .seat-label {
+background-color: #d00;
+cursor: not-allowed;
+}
+
+button {
+background-color: #d00;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+margin-top: 20px;
+font-size: 1em;
+}
+
+button:hover {
+background-color: #a00;
+}
+
+
+.Containers {
+background-color:white;
+display: grid;
+min-width: 390px;
+max-width: 1920px;
+margin: 15px auto;
+gap: 30px;
+grid-template-rows: 100px 1000px;
+grid-template-columns: repeat(1, 1fr);
+grid-template-areas:
+  "head"
+  "mainds"
+}
+
+.maincontent {
+grid-area: mainds;
+background-color:#B30623;
+margin-top: 10%;
+margin-bottom: 10%;
+margin-left: 30%;
+margin-right: 30%;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.input-box {
+box-sizing: border-box;
+background-color: #B30623;
+width: 95%;
+height: 95%;
+}
+
+.maincontent h1 {
+text-align: left;
+margin-left: 5%;
+font-size: 32px;
+font-family: oswald;
+color: #fff;
+}
+
+.input-box input {
+font-family: oswald;
+font-size: larger;
+display: flex;
+justify-items: center;
+align-items: center;
+position: relative;
+width: 90%;
+height: 50px;
+margin: 30px 30px; 
+border-radius: 5px;
+}
+
+.input-box button {
+font-weight: bold;
+font-family: oswald;
+font-size: 25px;
+color: #B30623;
+background-color: #fff;
+position: relative;
+left: 5%;
+width: 90%;
+height: 50px;
+margin: 80px 0;
+}
+
+.input-box .seats {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+font-size: 20px;
+font-weight: bold;
+color: #fff;
+position: relative;
+left: 4%;
+
+}
+
+.input-box .seats label {
+margin-right: 10px;
+}
+
+.input-box .seat-numbers {
+display: flex;
+gap: 5px;
+position: relative;
+}
+
+.input-box .seat-numbers span {
+background-color: #fff;
+color: #B30623;
+padding: 5px 10px;
+border-radius: 5px;
+}
