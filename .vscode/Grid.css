@@ -1,9 +1,8 @@
 .container {
   background-color:white;
   display: grid;
-  max-width: 1920px;
-  min-width: 390px;
   margin: 15px auto;
+  width: 1920px;
   gap: 30px;
   grid-template-rows: 100px 550px 660px;
   grid-template-columns: repeat(3, 1fr) 300px;
@@ -346,7 +345,7 @@
 
 .rating1 {
   grid-area: movies1;
-  background: url(images1/images/Rate.png);
+  background: url(images/Rate.png);
   background-size: 100px;
   background-repeat: no-repeat;
   background-position: center;
@@ -391,7 +390,7 @@
 
 .rating2 {
   grid-area: movies2;
-  background: url(images1/images/Rate.png);
+  background: url(images/Rate.png);
   background-size: 100px;
   background-repeat: no-repeat;
   background-position: center;
@@ -435,7 +434,7 @@
 
 .rating3 {
   grid-area: movies3;
-  background: url(images1/images/Rate1.png);
+  background: url(images/Rate1.png);
   background-size: 100px;
   background-repeat: no-repeat;
   background-position: center;
@@ -822,30 +821,52 @@ padding: 5px 5px;
 border-radius: 5px;
 }
 
-@media only screen and (max-width: 390px) {
+.mobil1 {
+  display: none;
+}
+
+.mobil2 {
+  display: none;
+}
+
+.pop1 {
+  display: none;
+}
+
+.mobil3 {
+  display: none;
+}
+
+.mobil4 {
+  display: none;
+}
+
+@media only screen and (max-width: 391px) {
 
   .container {
     background-color:white;
-    display: grid;
+    display:grid;
+    width: 391px;
     margin: 5px auto;
     gap: 10px;
-    grid-template-rows: 70px 200px 300px 200px;
+    grid-template-rows: 100px 280px 300px ;
     grid-template-columns: 1fr;
     grid-template-areas:
       "head"
       "main"
       "box-1"
-      "foot"
+      
   }
 
   .header {
     position: relative;
+    width: 100vw;
   }
 
   .logo {
     position: relative;
-    top: 55%;
-    left: 65%;
+    top: 36%;
+    left: 70%;
   }
   .val {
     display: none;
@@ -854,18 +875,18 @@ border-radius: 5px;
   .main-content {
     grid-area: main;
     position: relative;
-    width: 90%;
+    width: 100vw;
     left: 5%;
   }
 
   .headline {
-    font-size: 15px;
+    font-size: 20px;
     font-family: oswald;
     color: white;
     background-size: contain;
     position: relative;
-    top: 38%;
-    margin-top: 20%;
+    top: 73%;
+    margin-top: 15%;
     margin-left: 8%;
   }
   
@@ -874,7 +895,7 @@ border-radius: 5px;
     font-size: 10px;
     position: relative;
     left: 8%;
-    top: 20%;
+    top: 55%;
     bottom: 0%;
     font-family: inter;
   }
@@ -882,134 +903,325 @@ border-radius: 5px;
   .Ticket {
     cursor: pointer;
     display: flex;
+    grid-area: main;
     background-color: #B30623;
     color:#fff ;
-    padding: 3px 30px;
+    padding: 7px 35px;
     text-decoration:none;
     border-radius: 5px;
     transition: background-color 1s ease;
     position: relative;
-    bottom: 200%;
+    bottom: 400px;
     left: 40%;
-    
-  
   }
 
-  .sidebar {
+  .small-box  {
     display: none;
   }
-
-  .small-box {
-    grid-area: box-1;
-    position: relative;
-    width: 100%;
-    background-color: #B30623;
-    margin: 5px auto;
-    gap: 10px;
-    grid-template-rows: 15px 120px 120px;
-    grid-template-areas: 
-    "TEXT"
-    "img2"
-    "img3"
-  }
-
+  
   .Text {
-    font-size: 15px;
-    position: relative;
-    left: 5%;
-    font-family: oswald;
-    text-decoration: black;
+    display: none;
+  }
+  
+  .img1 {
+    display: none;
+  }
+  
+  .Text1 {
+    display: none;
+  }
+  
+  .by1 {
+    display: none;
   }
   
   .img2 {
-    grid-area: img2;
-    width: 350px;
-    background: url(images1/Guardians.webp);
-    background-size: 120px;
-    background-repeat: no-repeat; 
-    background-color: white;
-    background-position-x: 5%;
-    background-position-y: center;
-    position: relative;
-    left: 5%;
-    cursor: pointer; 
-    border-radius: 10px;
-  }
-
-  .mobil1 {
-
+    display: none;
   }
   
   .Text2 {
-    grid-area: img2;
-    font-size: x-small;
-    font-family: inter;
-    color: black;
-    position: relative;
-    left: 40%;
-    top: 10%;
+    display: none;
   }
   
   .by2 {
-    color: black;
-    font-family: inter;
-    font-size: xx-small;
-    position: relative;
-    left: 40%;
-    top: 3%;
-  
+    display: none;
   }
   
   .img3 {
-    grid-area: img3;
-    background: url(images1/Hollow.webp);
-    background-size: 120px;
-    background-repeat: no-repeat; 
-    background-color: white;
-    background-position-x: 5%;
-    background-position-y: center;
-    position: relative;
-    left: 5%;
-    cursor: pointer; 
-    border-radius: 10px;
+    display: none;
   }
   
   .Text3 {
-    grid-area: img3;
-    font-size: x-small;
-    font-family: inter;
-    color: black;
-    position: relative;
-    left: 40%;
-    top: 10%;
+    display: none;
   }
   
   .by3 {
-    color: black;
-    font-family: inter;
-    font-size: xx-small;
-    position: relative;
-    left: 40%;
-    top: 3%;
-  }
-
-  .img1 {
     display: none;
-    
   }
   
   .img4 {
     display: none;
   }
-
+  
+  .Text4 {
+    display: none;
+  }
+  
+  .by4 {
+    display: none;
+  }
+  
+  
   .img5 {
     display: none;
   }
-
+  
+  .Text5 {
+    display: none;
+  }
+  
+  .by5 {
+    display: none;
+  }
+  
   .img6 {
     display: none;
   }
+  
+  .Text6 {
+    display: none;
+  }
+  
+  .by6 {
+    display: none;
+  }
+  
+  .sidebar {
+    grid-area: box-1;
+    display: grid;
+    width: 430px;
+    margin: 5px auto;
+    gap: 10px;
+    border-radius: 0px;
+    background-color:#B30623;
+    grid-template-rows: 20px 130px 130px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    "pp"
+    "movies1"
+    "movies2"
+  }
+  
+  .Pop {
+    display: none;
+  }
+  .pop1 {
+    display: grid;
+    grid-area: pp;
+    font-family: oswald;
+    position: relative;
+    bottom: 90%;
+    left: 5%;
 
+  }
+  
+  .movies1 {
+    grid-area:movies1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    margin-top: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+  }
+  
+  .pic1 {
+    grid-area: movies1;
+    background: url(images1/Guardians.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+    margin-top: 3%;
+    margin-left: 8%;
+    margin-right: 67%;
+    margin-bottom: 8%;
+    border-radius:5px;
+  }
 
+  .mobil3 {
+    background-color: #B30623;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    padding: 2px 40px;
+    bottom: 264%;
+    left: 36%;
+    margin-left: 0%;
+    margin-right: 70%;
+    margin-bottom: 10%;
+  }
+  
+  .text7 {
+    grid-area: movies1;
+    font-family: inter;
+    color: black;
+    font-size: 12px;
+    margin-left: 35%;
+    margin-top: 3%;
+  }
+  
+  .rating1 {
+    grid-area: movies1;
+    background: url(images/Rate.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -2%;
+    margin-left: -4%;
+  }
+  
+  .movies2 {
+    display: none;
+  }
+  
+  .pic2 {
+    display: none;
+  }
+  
+  .text8 {
+    display: none;
+  
+  }
+  
+  .rating2 {
+    display: none;
+  }
+  
+  .movies3 {
+    grid-area: movies2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    margin-top: -3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 7%;
+    border-radius: 10px;
+  }
+  
+  .pic3 {
+    grid-area: movies2;
+    background: url(images1/Hollow.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0%;
+    margin-left: 8%;
+    margin-right: 67%;
+    margin-bottom: 10%;
+    border-radius:5px;
+  }
+  
+  .text9 {
+    grid-area: movies2;
+    font-family: inter;
+    font-size: 12px;
+    color: black;
+    margin-top: 3%;
+    margin-left: 35%;
+  }
+  
+  .rating3 {
+    grid-area: movies2;
+    background: url(images/Rate1.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -6%;
+    margin-left: -4%;
+  }
 
+  .mobil4 {
+    background-color: #B30623;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    padding: 2px 40px;
+    bottom: 223%;
+    left: 37%;
+    margin-left: 0%;
+    margin-right: 70%;
+    margin-bottom: 10%;
+  }
+  
+  .Soon {
+    display: none;
+  }
+  
+  .coming4 {
+    display: none;
+  }
+  
+  .pic4 {
+    display: none;
+  }
+  
+  .text10 {
+    display: none;
+  }
+  
+  .coming5 {
+    display: none;
+  }
+  
+  .pic5 {
+    display: none;
+  }
+  
+  .text11 {
+    display: none;
+  }
+  
+  .coming6 {
+    display: none;
+  }
+  
+  .pic6 {
+   display: none;
+  }
+  
+  .text12 {
+    display: none;
+  }
+
+  .mobil1 {
+    box-sizing: border-box;
+    display: block;
+    font-family: inter;
+    font-size: 20px;
+    background-color: #B30623;
+    border-radius: 10px;
+    padding: 20px 10px;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    bottom: 80%;
+  }
+
+  .mobil2 {
+    box-sizing: border-box;
+    display: block;
+    font-family: inter;
+    font-size: 20px;
+    background-color: #B30623;
+    border-radius: 10px;
+    padding: 20px 10px;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    bottom: 80%;
+  }
 }
